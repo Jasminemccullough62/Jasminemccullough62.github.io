@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        /* Set default font color to match background */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header styles */
+        #header {
+            background-color: #87CEEB; /* Light sky blue */
+            color: #ffffff; /* White font color */
+            padding: 50px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        /* Left navigation styles */
+        #left-nav {
+            background-color: #FFC499; /* Light orange */
+            color: #333333; /* Dark gray font color */
+            padding: 10px;
+            margin-right: 10px;
+            float: left;
+            width: 20%;
+            opacity: 0.8;
+        }
+
+        /* Right navigation styles */
+        #right-nav {
+            background-color: #C9E4CA; /* Light green */
+            color: #333333; /* Dark gray font color */
+            padding: 10px;
+            margin-left: 10px;
+            float: right;
+            width: 20%;
+            opacity: 0.8;
+        }
+
+        /* Body styles */
+        #body {
+            background-color: #F7F7F7; /* Light gray */
+            color: #333333; /* Dark gray font color */
+            padding: 10px;
+            margin-bottom: 10px;
+            opacity: 0.8;
+        }
+
+        /* Footer styles */
+        #footer {
+            background-color: #87CEEB; /* Light sky blue */
+            color: #ffffff; /* White font color */
+            padding: 10px;
+            opacity: 0.8;
+        }
+    </style>
