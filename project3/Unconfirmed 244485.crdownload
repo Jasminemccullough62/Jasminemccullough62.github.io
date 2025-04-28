@@ -1,0 +1,45 @@
+var main = function() {
+    var state;
+    var volume;
+
+    $('#play').click(function() {
+        $('#message').text("Playing track"); 
+        $('#player').trigger("play"); 
+    });
+
+    $('#pause').click(function() {
+        $('#message').text("Track paused"); 
+        $('#player').trigger("pause"); 
+    });
+
+     $('#mute').click(function() {
+        $('#player').prop("muted", true); 
+        $('#message').text("Audio muted"); 
+    });
+
+    $('#unmute').click(function() {
+        $('#player').prop("muted", false); 
+        $('#message').text("Audio unmuted"); 
+    });
+
+    $('#stop').click(function() {
+        $('#player').trigger("pause"); 
+        $('#player').prop("currentTime", 0); 
+        $('#message').text("Track stopped"); 
+    });
+
+    $('#volume-up').click(function() {
+        volume = Math.min(volume + 0.1, 1.0); 
+        $('#player').prop("volume", volume); 
+        $('#message').text("Volume: " + volume.toFixed(1)); 
+    });
+
+    // Volume down button click
+    $('#volume-down').click(function() {
+        volume = Math.max(volume - 0.1, 0.0); 
+        $('#player').prop("volume", volume); 
+        $('#message').text("Volume: " + volume.toFixed(1)); 
+    });
+}
+
+$(document).ready(main);
